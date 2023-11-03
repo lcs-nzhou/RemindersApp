@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct SingleReminderView: View {
+    let reminder: String
+    let time: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            ZStack {
+                Circle()
+                    .frame(width: 20)
+                    .foregroundColor(.gray)
+                Circle()
+                    .frame(width: 18)
+                    .foregroundColor(.white)
+            }
+            VStack{
+               Text(reminder)
+               Text(time)
+                    .padding(.trailing, 50)
+            }
+        }
     }
 }
 
 #Preview {
-    SingleReminderView()
+    SingleReminderView(reminder: "call auto body shop", time: "2023-11-16")
 }
