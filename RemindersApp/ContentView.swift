@@ -26,6 +26,20 @@ struct ContentView: View {
                 SingleReminderView(reminder: "Call mechanic to get TARDIS repaired", time: "Tomorrow, 12:00 PM")
             }
             .listStyle(.plain)
+            HStack {
+                ZStack {
+                    Circle()
+                        .frame(width:25)
+                        .foregroundColor(.blue)
+                    Image(systemName: "plus")
+                        .foregroundColor(.white)
+                        .bold()
+                }
+                Text("New Reminder")
+                    .foregroundStyle(.blue)
+                    .bold()
+            }
+            .padding()
         }
     }
 }
