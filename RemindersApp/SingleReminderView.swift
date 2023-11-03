@@ -11,21 +11,23 @@ struct SingleReminderView: View {
     let reminder: String
     let time: String
     var body: some View {
-        HStack{
+        HStack(alignment: .top){
             ZStack {
                 Circle()
-                    .frame(width: 20)
+                    .frame(width: 25)
                     .foregroundColor(.gray)
                 Circle()
-                    .frame(width: 18)
+                    .frame(width: 22)
                     .foregroundColor(.white)
             }
-            VStack{
+            VStack(alignment: .leading) {
                Text(reminder)
                Text(time)
-                    .padding(.trailing, 50)
+                    .foregroundStyle(.gray)
             }
+            Spacer()
         }
+        .padding()
     }
 }
 
