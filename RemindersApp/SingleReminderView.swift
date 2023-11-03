@@ -27,7 +27,7 @@ struct SingleReminderView: View {
             }
             Spacer()
         }
-        .padding()
+        .padding(.leading)
     }
 }
 
