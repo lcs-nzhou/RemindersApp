@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List{
+            Text("Call ato body shop")
+            Text("Feed Piper")
+            Text("Write lesson about interactive apps")
+            Text("Take Piper to the vet")
+            Text("Drop off donations at Goodwill")
+            Text("Call plumber about clog in sink")
+            Text("Call dentist to schedule appointment")
+            Text("Call mechanic to get TARDIS repaired")
         }
-        .padding()
+        .font(.caption)
+        .navigationTitle("To do")
     }
 }
 
